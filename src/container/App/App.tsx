@@ -10,10 +10,7 @@ const App = (props: Props) => {
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header />
-
-            <div>
-            <ImageSlider/>
-            </div>
+            <ImageSlider />
 
             <Footer />
         </StyledEngineProvider>
