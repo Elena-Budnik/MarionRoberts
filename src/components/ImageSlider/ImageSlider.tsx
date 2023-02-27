@@ -12,17 +12,23 @@ const ImageSlider = () => {
         <Slide>
             <div className="each-slide-effect">
                 <div style={{ backgroundImage: `url(${images[0]})` }}>
-                    <span>Категорія Назва статті Автор</span>
+                    <span>Категорія</span>
+                    <span>Назва статті</span>
+                    <span>Автор</span>
                 </div>
             </div>
             <div className="each-slide-effect">
                 <div style={{ backgroundImage: `url(${images[1]})` }}>
-                    <span>Категорія Назва статті Автор</span>
+                    <span>Категорія</span>
+                    <span>Назва статті</span>
+                    <span>Автор</span>
                 </div>
             </div>
             <div className="each-slide-effect">
                 <div style={{ backgroundImage: `url(${images[2]})` }}>
-                    <span> Категорія Назва статті Автор</span>
+                    <span>Категорія</span>
+                    <span>Назва статті</span>
+                    <span>Автор</span>
                 </div>
             </div>
         </Slide>
