@@ -5,13 +5,17 @@ type Props = {
     category: string
     date: string
     article: string
+    image: string
 }
 const NewsListItem = ({
-    category,date,article,
+    category,date,article, image,
 }: Props) => {
     return (
         <Card variant="outlined" className="newsCards">
             <CardContent>
+                <div className="news-image">
+                    <img src={image} alt="" />
+                </div>
                 <div className="category">{category}</div>
                 <div className="date">{date}</div>
                 <div className="article">{article}</div>
