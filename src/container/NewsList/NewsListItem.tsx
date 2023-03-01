@@ -7,9 +7,7 @@ type Props = {
     article: string
     image: string
 }
-const NewsListItem = ({
-    category,date,article, image,
-}: Props) => {
+const NewsListItem = ({ category, date, article, image }: Props) => {
     return (
         <Card variant="outlined" className="newsCards">
             <CardContent>
@@ -21,8 +19,8 @@ const NewsListItem = ({
                 <div className="article">{article}</div>
             </CardContent>
 
-            <CardActions className='btn-newsListItem'>
-                <Button variant="outlined" >Add to like</Button>
+            <CardActions className="btn-newsListItem">
+                <Button variant="outlined">Add to like</Button>
             </CardActions>
         </Card>
     )
