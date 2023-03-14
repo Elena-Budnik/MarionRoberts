@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import './ImageSlider.scss'
