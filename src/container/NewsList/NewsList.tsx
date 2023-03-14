@@ -17,7 +17,7 @@ const NewsList = (props: Props) => {
             </Typography>
 
             <Grid container spacing={3}>
-                {newsArray.map(({id, category, date, article,image}) => (
+                {newsArray.map(({ id, category, date, article, image }) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         {' '}
                         <NewsListItem

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import './ImageSlider.scss'
@@ -12,23 +13,17 @@ const ImageSlider = () => {
         <Slide>
             <div className="each-slide-effect">
                 <div style={{ backgroundImage: `url(${images[0]})` }}>
-                    <span>Категорія</span>
-                    <span>Назва статті</span>
-                    <span>Автор</span>
+                    <span>BEAUTY</span>
                 </div>
             </div>
             <div className="each-slide-effect">
                 <div style={{ backgroundImage: `url(${images[1]})` }}>
-                    <span>Категорія</span>
-                    <span>Назва статті</span>
-                    <span>Автор</span>
+                    <span>CULTURE</span>
                 </div>
             </div>
             <div className="each-slide-effect">
                 <div style={{ backgroundImage: `url(${images[2]})` }}>
-                    <span>Категорія</span>
-                    <span>Назва статті</span>
-                    <span>Автор</span>
+                    <span>EDITORIAL</span>
                 </div>
             </div>
         </Slide>
