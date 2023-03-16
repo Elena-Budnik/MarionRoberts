@@ -21,6 +21,7 @@ const NewsList = (props: Props) => {
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         {' '}
                         <NewsListItem
+                            id={id}
                             category={category}
                             date={date}
                             article={article}
