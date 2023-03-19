@@ -1,4 +1,5 @@
 type News = {
+    
     id:number
     category: string
     date: string

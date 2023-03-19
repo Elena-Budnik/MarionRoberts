@@ -10,6 +10,7 @@ import CulturePage from 'container/pages/Culture/CulturePage'
 import EditorialPage from 'container/pages/Editorial/EditorialPage'
 import FashionPage from 'container/pages/Fashion/FashionPage'
 import ShoppingPage from 'container/pages/Shopping/ShoppingPage'
+import Likes from 'container/pages/Likes/Likes'
 
 type Props = {}
 const App = (props: Props) => {
@@ -25,6 +26,7 @@ const App = (props: Props) => {
                 <Route path="editorial" element={<EditorialPage />} />
                 <Route path="fashion" element={<FashionPage />} />
                 <Route path="shopping" element={<ShoppingPage />} />
+                <Route path="likes" element={<Likes />} />
             </Routes>
 
             <Footer />
