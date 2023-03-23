@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent } from '@mui/material'
+import { Button, Card, CardContent } from '@mui/material'
 import './NewsListItem.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
