@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from 'redux/likeReducer'
+import MenuItem from 'components/Menu/MenuItem'
 
 type Props = {
     id: number
@@ -33,7 +34,7 @@ const NewsListItem = ({ id, category, date, article, image }: Props) => {
                 <div className="news-image">
                     <img src={image} alt="" />
                 </div>
-                <div className="category">{category}</div>
+                <MenuItem to={"/" + category}><div className="category">{category}</div></MenuItem>
                 <div className="date">{date}</div>
                 <div className="article">{article}</div>
             </CardContent>

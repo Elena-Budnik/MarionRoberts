@@ -20,7 +20,7 @@ const newsArray: News[] = [
     image:"images/img-newsList/1.jpg",
     autor: "by ANT EKSILER",
     tags: "#EMERALD, #INSTAGRAM, #LIFESTYLE, AWESOME",
-    text:"LOREM LOREM LOREMMdsg", 
+    text:" Instagram didn't exist when I was in high school, but I imagine I'd be pretty fascinated by the beautiful, leggy 17-year-old with more than 174,000 followers and a Wilhelmina Models contract, too. For the legions of aspiring Cool Teens™, D'Alessio, who has been modeling full-time for the last year, is living the dream — though her Cinderella story has been anything but conventional. At Coachella in 2015, pictures of D'Alessio (above, right) and her friend, 18-year-old model Josie Canseco (left), flooded the Internet, winding up on places like the festival's official Twitter and The Cobra Snake's Instagram, among others. BuzzFeed spoke to D'Alessio soon after, resulting in a viral article that has since garnered 1,479,600 views. Wilhelmina reached out to D’Alessio from there, and the rest is history. In the 12 months since D’Alessio was discovered, the Canada native has landed a slew of commercial campaigns, left Beverly Hills High School to pursue homeschooling and launched a YouTube channel with her friend and fellow model, Abby Champion. And with a secret project in the works for this summer, I imagine that D’Alessio’s stake in the California modeling pantheon will only deepen.", 
 },
 {
     id:2,
