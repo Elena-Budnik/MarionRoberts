@@ -58,18 +58,17 @@ const Reviews = (props: Props) => {
         }))
     }
     console.log(newReview)
-    const onSend = (e:React.FormEvent<HTMLFormElement>) => {
+    const onSend = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        if(newReview.name === "" || newReview.text === ""){
-            alert("All fields are required!")
-        }else{
-    
+        if (newReview.name === '' || newReview.text === '') {
+            alert('All fields are required!')
+        } else {
             setReviews((prevState) => {
-                return [...prevState, newReview ]
+                return [...prevState, newReview]
             })
             setNewReview({
-                name:"",
-                text:"",
+                name: '',
+                text: '',
             })
         }
     }
@@ -112,7 +111,9 @@ const Reviews = (props: Props) => {
                         onChange={handleText}
                     />
                 </div>
-                <Button variant="outlined" type='submit'>Send</Button>
+                <Button variant="outlined" type="submit">
+                    Send
+                </Button>
             </form>
         </>
     )

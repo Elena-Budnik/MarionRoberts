@@ -11,6 +11,7 @@ import EditorialPage from 'container/pages/Editorial/EditorialPage'
 import FashionPage from 'container/pages/Fashion/FashionPage'
 import ShoppingPage from 'container/pages/Shopping/ShoppingPage'
 import Likes from 'container/pages/Likes/Likes'
+import More from 'container/pages/More/More'
 
 type Props = {}
 const App = (props: Props) => {
@@ -27,6 +28,7 @@ const App = (props: Props) => {
                 <Route path="fashion" element={<FashionPage />} />
                 <Route path="shopping" element={<ShoppingPage />} />
                 <Route path="likes" element={<Likes />} />
+                <Route path="more" element={<More />} />
             </Routes>
 
             <Footer />

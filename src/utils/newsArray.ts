@@ -1,4 +1,4 @@
-type News = {
+ export type News = {
     
     id:number
     category: string
@@ -30,7 +30,7 @@ const newsArray: News[] = [
     image:"images/img-newsList/2.jpg",
     autor: "ANT EKSILER",
     tags: "#EMERALD, #INSTAGRAM, #LIFESTYLE, AWESOME",
-    text:"",
+    text:"bla bla 2222222",
 
 },
 {
@@ -41,7 +41,7 @@ const newsArray: News[] = [
     image:"images/img-newsList/3.jpg",
     autor: "ANT EKSILER",
     tags: "#EMERALD, #INSTAGRAM, #LIFESTYLE, AWESOME",
-    text:"",
+    text:"3333333333333333",
 },
 {
     id:4,
@@ -51,7 +51,7 @@ const newsArray: News[] = [
     image:"images/img-newsList/4.jpg",
     autor: "ANT EKSILER",
     tags: "#EMERALD, #INSTAGRAM, #LIFESTYLE, AWESOME",
-    text:"",
+    text:"text 4",
 },
 {
     id:5,
@@ -61,7 +61,7 @@ const newsArray: News[] = [
     image:"images/img-newsList/5.jpg",
     autor: "ANT EKSILER",
     tags: "#EMERALD, #INSTAGRAM, #LIFESTYLE, AWESOME",
-    text:"",
+    text:"text 5",
 },
 {
     id:6,
@@ -71,7 +71,7 @@ const newsArray: News[] = [
     image:"images/img-newsList/6.jpg",
     autor: "ANT EKSILER",
     tags: "#EMERALD, #INSTAGRAM, #LIFESTYLE, AWESOME",
-    text:"",
+    text:"text 6",
 
 },
 {
@@ -82,7 +82,7 @@ const newsArray: News[] = [
     image:"images/img-newsList/7.jpg",
     autor: "ANT EKSILER",
     tags: "#EMERALD, #INSTAGRAM, #LIFESTYLE, AWESOME",
-    text:"",
+    text:"text 7",
 }
 ]
 

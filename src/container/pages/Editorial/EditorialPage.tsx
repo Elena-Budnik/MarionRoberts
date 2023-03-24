@@ -1,6 +1,6 @@
 import OpenNews from '../OpenNews/OpenNews'
 
 const EditorialPage = () => {
-    return <OpenNews text="EDITORIAL" />
+    return <OpenNews categotyProperty="EDITORIAL" />
 }
 export default EditorialPage

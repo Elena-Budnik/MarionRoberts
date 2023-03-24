@@ -1,6 +1,6 @@
 import OpenNews from '../OpenNews/OpenNews'
 
 const BeautyPage = () => {
-    return <OpenNews text="BEAUTY" />
+    return <OpenNews categotyProperty="BEAUTY" />
 }
 export default BeautyPage

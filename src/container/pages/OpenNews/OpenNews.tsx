@@ -3,10 +3,10 @@ import NewsListItem from 'container/NewsList/NewsListItem'
 import newsArray from 'utils/newsArray'
 
 type Props = {
-    text:string,
+    categotyProperty:string,
 }
 
-const OpenNews = ({text}: Props) => {
+const OpenNews = ({categotyProperty}: Props) => {
     return (
         <>
             <Typography
@@ -15,11 +15,11 @@ const OpenNews = ({text}: Props) => {
                 component="h2"
                 padding="20px"
             >
-                {text}
+                {categotyProperty}
             </Typography>
             <Grid container spacing={3}>
                 {newsArray
-                    .filter((news) => news.category === text)
+                    .filter((news) => news.category === categotyProperty)
                     .map(({ id, category, date, article, image }) => (
                         <Grid item xs={12} sm={6} md={4} key={id}>
                             <NewsListItem
