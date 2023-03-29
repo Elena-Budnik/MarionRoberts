@@ -1,10 +1,4 @@
-import {
-    Button,
-    Card,
-    CardActions,
-    CardContent,
-    Typography,
-} from '@mui/material'
+import { Button, Card, CardContent, Typography } from '@mui/material'
 import './NewsListItem.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
@@ -53,7 +47,7 @@ const NewsListItem = ({ id, category, date, article, image }: Props) => {
                     </MenuItem>
                     <div className="date">{date}</div>
                 </div>
-                
+
                 <Typography variant="h5" align="left" padding="10px">
                     <div className="article">{article}</div>
                 </Typography>

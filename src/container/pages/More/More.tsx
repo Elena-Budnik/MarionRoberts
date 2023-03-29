@@ -1,5 +1,5 @@
 import MoreListItem from 'container/NewsList/MoreListItem'
-import NewsListItem from 'container/NewsList/NewsListItem'
+
 import newsArray from 'utils/newsArray'
 
 const More = () => {
