@@ -6,7 +6,11 @@ import {
     TextareaAutosize,
     Button,
 } from '@mui/material'
+import { Container } from '@mui/system'
 import { useState } from 'react'
+import './Revires.scss'
+
+
 
 type Props = {}
 
@@ -74,6 +78,8 @@ const Reviews = (props: Props) => {
     }
     return (
         <>
+        <Container>
+        <div className='form-reviews'>
             <Typography
                 variant="h4"
                 component="h2"
@@ -83,7 +89,7 @@ const Reviews = (props: Props) => {
             >
                 Reviews
             </Typography>
-            <div>
+            
                 {reviews.map((item, i) => (
                     <Card variant="outlined" sx={{ margin: '20px 0' }} key={i}>
                         <CardContent>
@@ -93,7 +99,7 @@ const Reviews = (props: Props) => {
                     </Card>
                 ))}
             </div>
-            <form onSubmit={onSend}>
+            <form onSubmit={onSend} className='form-reviews'>
                 <h3>Please leave a review</h3>
                 <div>
                     <TextField
@@ -109,12 +115,14 @@ const Reviews = (props: Props) => {
                         placeholder="Text"
                         value={newReview.text}
                         onChange={handleText}
+                        
                     />
                 </div>
                 <Button variant="outlined" type="submit">
                     Send
                 </Button>
             </form>
+            </Container>
         </>
     )
 }

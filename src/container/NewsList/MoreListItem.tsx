@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from 'redux/likeReducer'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import ImageSlider from 'components/ImageSlider/ImageSlider'
 
 type News = {
     id: number
@@ -29,6 +30,7 @@ const MoreListItem = ({
     const dispath = useAppDispatch()
     return (
         <div>
+            <ImageSlider></ImageSlider>
             <Typography
                 variant="h4"
                 component="h2"

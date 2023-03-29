@@ -1,4 +1,10 @@
-import { Button, Card, CardActions, CardContent } from '@mui/material'
+import {
+    Button,
+    Card,
+    CardActions,
+    CardContent,
+    Typography,
+} from '@mui/material'
 import './NewsListItem.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
@@ -6,7 +12,7 @@ import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from 'redux/likeReducer'
 import MenuItem from 'components/Menu/MenuItem'
 
-import {  NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -24,8 +30,9 @@ const NewsListItem = ({ id, category, date, article, image }: Props) => {
 
     return (
         <Card variant="outlined" className="newsCards">
-            <CardContent>
+            <div className="buttons">
                 <Button
+                    className="btn-like"
                     variant="outlined"
                     onClick={() =>
                         isLiked
@@ -35,29 +42,32 @@ const NewsListItem = ({ id, category, date, article, image }: Props) => {
                 >
                     {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </Button>
+            </div>
+            <CardContent>
                 <div className="news-image">
                     <img src={image} alt="" />
                 </div>
-                <MenuItem to={'/' + category}>
-                    <div className="category">{category}</div>
-                </MenuItem>
-                <div className="date">{date}</div>
-
-                <div className="article">{article}</div>
+                <div className="line1">
+                    <MenuItem to={'/' + category}>
+                        <div className="category">{category}</div>
+                    </MenuItem>
+                    <div className="date">{date}</div>
+                </div>
+                
+                <Typography variant="h5" align="left" padding="10px">
+                    <div className="article">{article}</div>
+                </Typography>
             </CardContent>
-
-            {/* <CardActions className="btn-newsListItem">
-                <MenuItem to="/more">More</MenuItem>
-            </CardActions> */}
-
-            <Button
-                className="btn-more"
-                variant="outlined"
-                component={NavLink}
-                to={`/more?id=${id}`}
-            >
-                more...
-            </Button>
+            <div className="buttons">
+                <Button
+                    className="btn-more"
+                    variant="outlined"
+                    component={NavLink}
+                    to={`/more?id=${id}`}
+                >
+                    more...
+                </Button>
+            </div>
         </Card>
     )
 }
