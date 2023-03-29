@@ -4,6 +4,14 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { Container, StyledEngineProvider } from '@mui/material'
 import ImageSlider from 'components/ImageSlider/ImageSlider'
 import Home from 'container/pages/Home/Home'
+import { Route, Routes } from 'react-router-dom'
+import BeautyPage from 'container/pages/Beauty/BeautyPage'
+import CulturePage from 'container/pages/Culture/CulturePage'
+import EditorialPage from 'container/pages/Editorial/EditorialPage'
+import FashionPage from 'container/pages/Fashion/FashionPage'
+import ShoppingPage from 'container/pages/Shopping/ShoppingPage'
+import Likes from 'container/pages/Likes/Likes'
+import More from 'container/pages/More/More'
 
 type Props = {}
 const App = (props: Props) => {
@@ -11,15 +19,17 @@ const App = (props: Props) => {
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header />
-            <ImageSlider />
 
-            <Container
-                sx={{
-                    padding: '60px 0',
-                }}
-            >
-                <Home />
-            </Container>
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="beauty" element={<BeautyPage />} />
+                <Route path="culture" element={<CulturePage />} />
+                <Route path="editorial" element={<EditorialPage />} />
+                <Route path="fashion" element={<FashionPage />} />
+                <Route path="shopping" element={<ShoppingPage />} />
+                <Route path="likes" element={<Likes />} />
+                <Route path="more" element={<More />} />
+            </Routes>
 
             <Footer />
         </StyledEngineProvider>

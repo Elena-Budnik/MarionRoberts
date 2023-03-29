@@ -3,11 +3,7 @@ import NewsListItem from './NewsListItem'
 import newsArray from 'utils/newsArray'
 
 type Props = {}
-type NewsProps = {
-    category: string
-    date: string
-    article: string
-}
+
 const NewsList = (props: Props) => {
     return (
         <>
@@ -21,13 +17,15 @@ const NewsList = (props: Props) => {
             </Typography>
 
             <Grid container spacing={3}>
-                {newsArray.map(({ category, date, article }: NewsProps) => (
-                    <Grid item xs={12} sm={6} md={4}>
+                {newsArray.map(({ id, category, date, article, image }) => (
+                    <Grid item xs={12} sm={6} md={4} key={id}>
                         {' '}
                         <NewsListItem
+                            id={id}
                             category={category}
                             date={date}
                             article={article}
+                            image={image}
                         />
                     </Grid>
                 ))}

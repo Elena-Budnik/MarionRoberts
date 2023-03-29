@@ -1,16 +1,27 @@
-import Button from '@mui/material/Button'
+import { useAppSelector } from 'redux/hooks'
+import newsArray from 'utils/newsArray'
+import MenuItem from './MenuItem'
+import { News } from 'utils/newsArray'
 
 type Props = {}
 
 const Menu = (props: Props) => {
+    const productsLikeState = useAppSelector(
+        (state) => state.productsLikeState
+    )
+    const likedNews = newsArray.filter(
+        ({id}:News) => productsLikeState[id]
+    )
+    const likeCounter = likedNews.length
     return (
         <>
-            <Button color="inherit">Home</Button>
-            <Button color="inherit">Beauty</Button>
-            <Button color="inherit">Culture</Button>
-            <Button color="inherit">Editorial</Button>
-            <Button color="inherit">Fashion</Button>
-            <Button color="inherit">Shopping</Button>
+            <MenuItem to="/">Home</MenuItem>
+            <MenuItem to="/beauty">Beauty</MenuItem>
+            <MenuItem to="/culture">Culture</MenuItem>
+            <MenuItem to="/editorial">Editorial</MenuItem>
+            <MenuItem to="/fashion">Fashion</MenuItem>
+            <MenuItem to="/shopping">Shopping</MenuItem>
+            <MenuItem to="/likes">Likes:{likeCounter}</MenuItem>
         </>
     )
 }

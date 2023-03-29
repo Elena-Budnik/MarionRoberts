@@ -10,13 +10,35 @@
     font-size: 16px;
     margin-bottom: 15px;
 }
-.newsCards {
-    margin-left: 50px;
-}
-.btn-newsListItem {
-    display: flex;
-    justify-content: center;
-}
+
+
 .newsCards{
     padding: 20px 0;
+}
+.news-image{
+    text-align: center;
+    margin-bottom: 20px;
+    img{
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.buttons{
+    display: flex;
+    justify-content:right;
+    padding-right: 10px;
+    
+}
+.line1{
+    display: flex;
+    justify-content:space-around;
+    padding-right: 10px;
+    align-items: baseline;
+    color: rgb(89, 24, 23);
+    
+}
+.article{
+    font-size: 28px;
 }
